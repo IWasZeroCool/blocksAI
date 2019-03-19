@@ -81,7 +81,7 @@ to around 1% of the time over the course of about 80% of the total training step
  
 I've tried several variations of length of training, from 1 million steps to 10 million steps.
  
-###Scoring and Rewards
+### Scoring and Rewards
 The game is scored where you get 1 point per "size of the piece placed", plus incrementally increasing
 rewards for lines cleared. For example, if you place a piece that has 3 blocks, you get 3 points. If
 you clear one line, that's 8 blocks cleared and thus 8 points (in addition to the points from 
@@ -96,7 +96,7 @@ and "game over" resulted in a negative score.
 Other variations I've tried have included minor and major negative scores for playing empty pieces and
 placing pieces where they couldn't fit, and hard-coded values for placed pieces and line clearing.
  
-###Results
+### Results
 Well, I guess it's no surprise that it's not working, else why would I be begging you for your help? ;)
  
 The bottom line is that this is my first attempt at anything ML related, and I'm really just shooting
@@ -107,7 +107,7 @@ essentially the same thing: It runs in "explore" mode for a pretty long time, ev
 to non-explore mode, and utterly fails. It generally scores spectacularly worse in game score and 
 reward than if it were just choosing actions at random.
  
-###Questions I have
+### Questions I have
 - What am I doing wrong? Lol, ok that's a little vague
 - Am I feeding the correct data into the NN?
 - Should I be getting a 192 random int output as an action?
